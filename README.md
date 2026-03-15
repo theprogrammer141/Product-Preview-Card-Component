@@ -25,11 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/desktop-view.png)
+![](./design/mobile-view.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [See here](https://product-preview-cardcomp.netlify.app/)
 
 ## My process
 
@@ -74,4 +75,5 @@ transition: background-color 0.3s ease;
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Abdullah](https://www.frontendmentor.io/profile/theprogrammer141)
+- GitHub - [@theprogrammer141](https://github.com/theprogrammer141)
