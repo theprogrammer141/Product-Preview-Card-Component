@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  background-color: #f2ebe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 800px;
+}
+
+.card-image {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-content {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content #perfume {
+  font-size: 0.875em;
+  color: #6c7289;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.card-content h2 {
+  font-size: 2.7em;
+  color: #1c232b;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.card-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  color: #6c7289;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.card-content .price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-content .price .current-price {
+  font-family: "Fraunces", serif;
+  font-size: 2.25em;
+  color: #3c8067;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.card-content .price .original-price {
+  font-family: "Fraunces", serif;
+  font-size: 0.875em;
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+.card-content .add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #3c8067;
+  color: #ffffff;
+  max-width: 90%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content .add-to-cart:first-child {
+  justify-content: space-between;
+}
+
+.card-content .add-to-cart:hover {
+  background-color: #1b4133;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    max-width: 450px;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-image img {
+    border-radius: 10px 10px 0 0;
+    max-height: 300px;
+  }
+
+  .card-content {
+    width: 100%;
+    padding: 20px;
+  }
+}
